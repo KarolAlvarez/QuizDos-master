@@ -16,6 +16,7 @@
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:scaleType="centerCrop"
+            android:id="@+id/fotoUser"
             android:background="@mipmap/ic_launcher_round"/>
         <LinearLayout
             android:layout_width="match_parent"

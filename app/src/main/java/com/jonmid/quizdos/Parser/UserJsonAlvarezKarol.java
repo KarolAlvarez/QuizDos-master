@@ -26,15 +26,17 @@ public class UserJsonAlvarezKarol {
             JSONObject direcion = item.getJSONObject("address");
             modelUser.setAddress(direcion.getString("street"));
 
-            countryDetail.setLanguages(languagesItem.getString("nativeName"));
+            JSONObject company=item.getJSONObject("company");
+            modelUser.setNameCompany(company.getString("name"));
 
+            modelUser.setName(item.getString("name"));
+            modelUser.setEmail(item.getString("email"));
+            modelUser.setPhone(item.getString("phone"));
+            modelUser.setUsername(item.getString("username"));
 
-            modelPhoto.setTitle(item.getString("title"));
-            modelPhoto.setThumbnailUrl(item.getString("thumbnailUrl"));
-            modelPhoto.setFoto(item.getString("url"));
-            modelPhoto.setId(item.getInt("id"));
-            modelPhotoList.add(modelPhoto);
+            modelAlvarezKarolList.add(modelUser);
+
         }
-        return modelPhotoList;
+        return modelAlvarezKarolList;
     }
 }
