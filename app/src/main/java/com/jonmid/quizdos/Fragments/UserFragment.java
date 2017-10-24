@@ -41,13 +41,15 @@ public class UserFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        progressBar = (ProgressBar) findViewById(R.id.id_pb_item_2);
+
+
+/*        progressBar = (ProgressBar) findViewById(R.id.id_pb_item_2);
         button = (Button) findViewById(R.id.id_btn_listcountries_2);
         recyclerView = (RecyclerView) findViewById(R.id.id_rv_item_2);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-
+*/
 
         loadData2();
 
